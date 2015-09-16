@@ -17,8 +17,6 @@ gem "yard"
 gem "ci_reporter", "~> 1.9"
 
 if defined?(RUBY_VERSION) && RUBY_VERSION > '1.9'
-  gem "ruby-prof"    unless defined?(JRUBY_VERSION) || defined?(Rubinius)
-  gem "require-prof" unless defined?(JRUBY_VERSION) || defined?(Rubinius)
   gem "simplecov"
   gem "simplecov-rcov"
   gem "cane"

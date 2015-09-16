@@ -52,13 +52,11 @@ Gem::Specification.new do |s|
   end
 
   if defined?(RUBY_VERSION) && RUBY_VERSION > '1.9'
-    s.add_development_dependency "ruby-prof" unless defined?(JRUBY_VERSION) || defined?(Rubinius)
     s.add_development_dependency "jbuilder"
     s.add_development_dependency "escape_utils" unless defined? JRUBY_VERSION
     s.add_development_dependency "simplecov"
     s.add_development_dependency "simplecov-rcov"
     s.add_development_dependency "cane"
-    s.add_development_dependency "require-prof" unless defined?(JRUBY_VERSION) || defined?(Rubinius)
   end
 
   if defined?(RUBY_VERSION) && RUBY_VERSION > '2.2'
